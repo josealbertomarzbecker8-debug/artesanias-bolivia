@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>José Alberto Marz Becker | Artesanías en Llaveros de Lagartijas con Sombrero de Saó</title>
+  <meta name="description" content="Artesanías exclusivas hechas a mano por José Alberto Marz Becker en Santa Cruz, Bolivia. Llaveros en forma de lagartijas con sombrero de saó para regalos, recuerdos y eventos.">
+  <meta name="author" content="José Alberto Marz Becker">
+
+  <!-- SEO JSON-LD ESTRUCTURADO (Person & LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "José Alberto Marz Becker",
+        "jobTitle": "Maestro Artesano",
+        "description": "Creador artesanal especializado en llaveros tejidos en forma de lagartijas con sombrero de saó tradicional de Santa Cruz, Bolivia.",
+        "telephone": "+59178914551",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Santa Cruz de la Sierra",
+          "addressRegion": "Santa Cruz",
+          "addressCountry": "BO"
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "José Alberto Marz Becker - Artesanías",
+        "description": "Elaboración artesanal de llaveros en forma de lagartijas con sombrero de saó en Santa Cruz, Bolivia.",
+        "telephone": "+59178914551",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Santa Cruz de la Sierra",
+          "addressCountry": "BO"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* 1. RESET Y TOKENS GLOBALES (WCAG AA CONTRAST >= 4.5:1) */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      /* Tríada Cromática Sector Artesanal & Tradición */
+      --primary: #b45309;        /* Ámbar Tostado */
+      --primary-dark: #92400e;   /* Ámbar Profundo */
+      --accent: #c2410c;         /* Terracota / Naranja Fuego accesible con texto blanco */
+      --accent-hover: #9a3412;
+      --bg: #fefce8;             /* Crema Suave Natural */
+      --bg-alt: #fef3c7;         /* Arena Cálida */
+      --surface: #ffffff;        /* Blanco Puro */
+      --text: #1c1917;           /* Carbón Cálido */
+      --text-muted: #44403c;     /* Piedra Oscura (Contraste > 7:1 sobre blanco) */
+      --border: #fde68a;         /* Borde Dorado Suave */
+
+      /* Escala Tipográfica y Espaciado Fluido (Matemática clamp) */
+      --font-h1: clamp(1.85rem, 1.8vw + 1.4rem, 3.25rem);
+      --font-h2: clamp(1.5rem, 1.1vw + 1.2rem, 2.25rem);
+      --font-h3: clamp(1.15rem, 0.5vw + 1.05rem, 1.4rem);
+      --font-body: clamp(1rem, 0.25vw + 0.95rem, 1.125rem);
+      --space-section: clamp(2.75rem, 4.5vw + 1.5rem, 5.5rem);
+      --gutter: clamp(1rem, 2vw + 0.5rem, 2rem);
+
+      /* Elevación y Transiciones */
+      --shadow-sm: 0 1px 3px rgba(28, 25, 23, 0.08);
+      --shadow-md: 0 4px 12px -2px rgba(180, 83, 9, 0.12);
+      --shadow-lg: 0 12px 24px -4px rgba(180, 83, 9, 0.16);
+      --radius-md: 0.75rem;
+      --radius-lg: 1.25rem;
+      --transition: 220ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: var(--font-body);
+      line-height: 1.65;
+      color: var(--text);
+      background-color: var(--bg);
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* 2. TIPOGRAFÍA Y JERARQUÍA */
+    h1, h2, h3 {
+      line-height: 1.2;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+    h1 { font-size: var(--font-h1); }
+    h2 { font-size: var(--font-h2); }
+    h3 { font-size: var(--font-h3); font-weight: 700; }
+
+    p {
+      color: var(--text-muted);
+      max-width: 68ch;
+    }
+
+    /* 3. LAYOUTS FLUIDOS E INTRÍNSECOS */
+    .container {
+      width: min(100% - (var(--gutter) * 2), 1160px);
+      margin-inline: auto;
+    }
+
+    section {
+      padding-block: var(--space-section);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-block-end: clamp(2rem, 3vw, 3rem);
+    }
+
+    .section-header p {
+      margin-inline: auto;
+      margin-block-start: 0.75rem;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary-dark);
+      background-color: var(--bg-alt);
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      margin-block-end: 0.75rem;
+    }
+
+    /* 4. BOTONES Y OBJETIVOS TÁCTILES ACCESIBLES (>= 44x44px) */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      min-height: 48px;
+      min-width: 48px;
+      padding-block: 0.75rem;
+      padding-inline: 1.5rem;
+      border-radius: 0.65rem;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: transform var(--transition), background-color var(--transition), box-shadow var(--transition);
+    }
+
+    .btn:focus-visible,
+    button:focus-visible,
+    a:focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 3px;
+    }
+
+    .btn-primary {
+      background-color: var(--accent);
+      color: #ffffff;
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-secondary {
+      background-color: var(--surface);
+      color: var(--primary-dark);
+      border-color: var(--primary);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--bg-alt);
+      transform: translateY(-2px);
+    }
+
+    /* 5. NAVEGACIÓN FIJA ACCESIBLE */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: rgba(254, 252, 232, 0.94);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 800;
+      font-size: 1.05rem;
+    }
+
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      background-color: var(--primary);
+      color: #ffffff;
+      border-radius: 0.6rem;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding-block: 0.5rem;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      transition: color var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      min-width: 44px;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--text);
+    }
+
+    @media (max-width: 820px) {
+      .menu-toggle {
+        display: inline-flex;
+      }
+      .nav-links {
+        position: absolute;
+        inset-inline: 0;
+        top: 72px;
+        background: var(--surface);
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1.25rem;
+        border-bottom: 2px solid var(--border);
+        box-shadow: var(--shadow-lg);
+        gap: 0.5rem;
+      }
+      .nav-links[hidden] {
+        display: none;
+      }
+      .nav-links a {
+        padding-inline: 0.75rem;
+      }
+    }
+
+    /* 6. HERO DE AUTORIDAD (ARQUETIPO 2) */
+    .hero {
+      padding-block: clamp(2.5rem, 5vw, 4.5rem);
+      background: linear-gradient(180deg, var(--bg-alt) 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+      align-items: center;
+      gap: clamp(2rem, 4vw, 3.5rem);
+    }
+
+    .hero-content h1 {
+      margin-block-end: 1.15rem;
+    }
+
+    .hero-content h1 span {
+      color: var(--primary);
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.05rem, 0.4vw + 1rem, 1.25rem);
+      margin-block-end: 1.75rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-block-end: 1.75rem;
+    }
+
+    .trust-strip {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.25rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .trust-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .hero-visual {
+      background-color: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: clamp(1.25rem, 3vw, 2rem);
+      box-shadow: var(--shadow-lg);
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-artwork {
+      width: 100%;
+      max-width: 380px;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      margin-inline: auto;
+      display: block;
+    }
+
+    .artisan-badge {
+      margin-block-start: 1rem;
+      padding-block: 0.65rem;
+      padding-inline: 1rem;
+      background-color: var(--bg);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    /* 7. BIO NARRATIVA Y HITOS DE TRAYECTORIA */
+    .bio-section {
+      background-color: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .bio-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+      gap: clamp(2rem, 4vw, 3rem);
+      align-items: start;
+    }
+
+    .bio-story p + p {
+      margin-block-start: 1rem;
+    }
+
+    .milestones-list {
+      display: grid;
+      gap: 1.25rem;
+    }
+
+    .milestone-card {
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+      border-inline-start: 4px solid var(--primary);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+    }
+
+    .milestone-card h3 {
+      margin-block-end: 0.35rem;
+      color: var(--primary-dark);
+    }
+
+    /* 8. PORTAFOLIO INTERACTIVO CON CONTAINER QUERIES */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-block-end: 2.25rem;
+    }
+
+    .filter-btn {
+      min-height: 44px;
+      min-width: 44px;
+      padding-block: 0.55rem;
+      padding-inline: 1.15rem;
+      border-radius: 999px;
+      border: 1.5px solid var(--primary);
+      background-color: var(--surface);
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 0.92rem;
+      cursor: pointer;
+      transition: background-color var(--transition), color var(--transition), transform var(--transition);
+    }
+
+    .filter-btn:hover {
+      background-color: var(--bg-alt);
+    }
+
+    .filter-btn.active {
+      background-color: var(--primary);
+      color: #ffffff;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+      gap: var(--gutter);
+    }
+
+    .card-container {
+      container-type: inline-size;
+      container-name: craft-card;
+    }
+
+    .craft-card {
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .craft-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .craft-media {
+      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+      padding: 1.5rem;
+      display: grid;
+      place-items: center;
+      aspect-ratio: 16 / 10;
+    }
+
+    .craft-body {
+      padding: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+      gap: 1rem;
+    }
+
+    .craft-tag {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--primary-dark);
+    }
+
+    .craft-body h3 {
+      margin-block: 0.35rem 0.5rem;
+    }
+
+    .craft-body p {
+      font-size: 0.95rem;
+    }
+
+    @container craft-card (min-width: 440px) {
+      .craft-card {
+        flex-direction: row;
+      }
+      .craft-media {
+        width: 42%;
+        aspect-ratio: auto;
+      }
+    }
+
+    /* 9. CARRUSEL NATIVO DE TESTIMONIOS (CSS SCROLL-SNAP) */
+    .testimonials-section {
+      background-color: var(--surface);
+      border-block: 1px solid var(--border);
+    }
+
+    .snap-carousel {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: min(88%, 380px);
+      gap: var(--gutter);
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-padding-inline: 1rem;
+      padding-block-end: 1rem;
+      scrollbar-width: thin;
+      scrollbar-color: var(--primary) var(--bg-alt);
+    }
+
+    .testimonial-card {
+      scroll-snap-align: start;
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .stars {
+      color: #b45309;
+      font-size: 1.1rem;
+      letter-spacing: 0.1em;
+    }
+
+    .testimonial-author {
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: var(--text);
+    }
+
+    .testimonial-role {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* 10. AGENDAMIENTO Y PEDIDOS DIRECTOS POR WHATSAPP */
+    .booking-box {
+      background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+      border: 2px solid var(--primary);
+      border-radius: var(--radius-lg);
+      padding: clamp(1.75rem, 4vw, 3rem);
+      box-shadow: var(--shadow-lg);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .booking-form-sim {
+      background-color: var(--surface);
+      padding: 1.5rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      display: grid;
+      gap: 1rem;
+    }
+
+    .form-group {
+      display: grid;
+      gap: 0.4rem;
+    }
+
+    .form-group label {
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: var(--text);
+    }
+
+    .form-control {
+      min-height: 46px;
+      padding-inline: 0.85rem;
+      border-radius: 0.5rem;
+      border: 1.5px solid #cbd5e1;
+      font-family: inherit;
+      font-size: 1rem;
+      color: var(--text);
+      background-color: var(--surface);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(180, 83, 9, 0.2);
+    }
+
+    /* 11. FOOTER MINIMALISTA */
+    .site-footer {
+      background-color: var(--text);
+      color: #f5f5f4;
+      padding-block: 2.5rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .footer-inner p {
+      color: #d6d3d1;
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#inicio" class="brand" aria-label="José Alberto Marz Becker - Inicio">
+        <span class="brand-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 16c4-6 16-6 20 0"/>
+            <path d="M7 13c1-5 9-5 10 0"/>
+            <path d="M4 16h16"/>
+          </svg>
+        </span>
+        <span>José Alberto Marz Becker</span>
+      </a>
+
+      <button type="button" class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Abrir menú de navegación">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links" id="primaryNav">
+          <li><a href="#historia">Mi Historia</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#testimonios">Clientes</a></li>
+          <li><a href="#agendar" class="btn btn-primary" style="min-height: 44px; padding-block: 0.45rem;">Pedir por WhatsApp</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- 1. HERO DE AUTORIDAD -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">Artesanía Original de Santa Cruz, Bolivia</span>
+          <h1>Lleva el orgullo cruceño en tus manos con <span>lagartijas artesanales con sombrero de saó</span></h1>
+          <p class="hero-subtitle">
+            Soy <strong>José Alberto Marz Becker</strong>. Diseño y tejo a mano piezas únicas que fusionan la tradición de nuestra tierra con un acabado duradero, ideales para regalos inolvidables, recuerdos turísticos y detalles corporativos.
+          </p>
+          <div class="hero-actions">
+            <a href="#agendar" class="btn btn-primary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+              Cotizar Pedido por WhatsApp
+            </a>
+            <a href="#portafolio" class="btn btn-secondary">Explorar Catálogo Artesanal</a>
+          </div>
+          <div class="trust-strip" role="list">
+            <span class="trust-item" role="listitem">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b45309" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              100% Tejido a Mano
+            </span>
+            <span class="trust-item" role="listitem">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b45309" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Pedidos por Unidad y Mayor
+            </span>
+            <span class="trust-item" role="listitem">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b45309" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Envíos en Santa Cruz y Bolivia
+            </span>
+          </div>
+        </div>
+
+        <!-- Ilustración Vectorial Hero (LCP Optimizado, sin lazy-loading) -->
+        <div class="hero-visual">
+          <svg class="hero-artwork" width="380" height="380" viewBox="0 0 380 380" role="img" aria-label="Ilustración artesanal de llavero de lagartija con sombrero de saó cruceño" fetchpriority="high">
+            <defs>
+              <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#fde68a"/>
+                <stop offset="100%" stop-color="#fefce8"/>
+              </radialGradient>
+            </defs>
+            <circle cx="190" cy="190" r="170" fill="url(#sunGlow)"/>
+            <!-- Argolla metálica del llavero -->
+            <circle cx="190" cy="48" r="22" fill="none" stroke="#78716c" stroke-width="6"/>
+            <rect x="184" y="68" width="12" height="18" rx="4" fill="#57534e"/>
+            <!-- Cola curva de la lagartija -->
+            <path d="M190 250 C 190 305, 130 325, 115 295 C 102 270, 145 265, 155 288" fill="none" stroke="#15803d" stroke-width="14" stroke-linecap="round"/>
+            <!-- Patas tejidas -->
+            <path d="M155 175 L 118 155 L 105 165 M118 155 L 108 142" fill="none" stroke="#166534" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M225 175 L 262 155 L 275 165 M262 155 L 272 142" fill="none" stroke="#166534" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M160 225 L 122 242 L 110 255" fill="none" stroke="#166534" stroke-width="9" stroke-linecap="round"/>
+            <path d="M220 225 L 258 242 L 270 255" fill="none" stroke="#166534" stroke-width="9" stroke-linecap="round"/>
+            <!-- Cuerpo tejido con patrón de cuentas -->
+            <ellipse cx="190" cy="198" rx="34" ry="56" fill="#16a34a"/>
+            <circle cx="190" cy="175" r="7" fill="#facc15"/>
+            <circle cx="190" cy="198" r="8" fill="#ffffff"/>
+            <circle cx="190" cy="221" r="7" fill="#15803d"/>
+            <!-- Cabeza -->
+            <ellipse cx="190" cy="132" rx="26" ry="22" fill="#16a34a"/>
+            <circle cx="176" cy="128" r="5" fill="#1c1917"/>
+            <circle cx="204" cy="128" r="5" fill="#1c1917"/>
+            <circle cx="177" cy="127" r="1.8" fill="#ffffff"/>
+            <circle cx="205" cy="127" r="1.8" fill="#ffffff"/>
+            <!-- Sombrero de Saó Cruceño -->
+            <ellipse cx="190" cy="112" rx="64" ry="15" fill="#eab308" stroke="#b45309" stroke-width="3"/>
+            <path d="M156 112 C 160 80, 220 80, 224 112 Z" fill="#facc15" stroke="#b45309" stroke-width="3"/>
+            <!-- Cinta verde tradicional del sombrero -->
+            <path d="M158 106 Q 190 114 222 106" fill="none" stroke="#15803d" stroke-width="5"/>
+          </svg>
+          <div class="artisan-badge">
+            Pieza Insignia • Identidad Camba Hecha a Mano
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. BIO NARRATIVA Y HITOS -->
+    <section id="historia" class="bio-section">
+      <div class="container bio-layout">
+        <div class="bio-story">
+          <span class="eyebrow">El Artesano Detrás de la Obra</span>
+          <h2>Tradición cruceña tejida cuenta por cuenta</h2>
+          <p style="margin-block-start: 1rem;">
+            En <strong>Santa Cruz de la Sierra</strong>, cada símbolo cuenta una historia. Mi trabajo como artesano nace del deseo de unir dos emblemas queridos de nuestra región: la agilidad y simpatía de la lagartija tejida a mano, coronada con el icónico <strong>sombrero de saó</strong>.
+          </p>
+          <p>
+            Cada llavero es elaborado de manera manual seleccionando materiales resistentes y colores vibrantes que reflejan la alegría de nuestra tierra. No fabrico piezas en serie industrial: cada creación lleva dedicación, precisión en el trenzado y un control de detalle pensado para acompañarte durante años.
+          </p>
+        </div>
+
+        <div class="milestones-list" aria-label="Pilares de mi trabajo artesanal">
+          <article class="milestone-card">
+            <h3>1. Diseño con Identidad Local</h3>
+            <p>Incorporación artesanal del sombrero de saó en miniatura sobre cada lagartija tejida, logrando un recuerdo auténtico de Santa Cruz.</p>
+          </article>
+          <article class="milestone-card">
+            <h3>2. Resistencia y Acabado Fino</h3>
+            <p>Trenzado firme con argollas metálicas reforzadas para soportar el uso diario en llaves, mochilas, bolsos o retrovisores.</p>
+          </article>
+          <article class="milestone-card">
+            <h3>3. Personalización para Eventos y Empresas</h3>
+            <p>Combinaciones de colores a pedido (verde y blanco cruceño, tonos tierra, vibrantes) para ferias, bodas, recuerdos turísticos y regalos empresariales.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PORTAFOLIO INTERACTIVO -->
+    <section id="portafolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Catálogo de Creaciones</span>
+          <h2>Llaveros Artesanales de Lagartijas con Sombrero de Saó</h2>
+          <p>Filtra por estilo para descubrir las distintas presentaciones disponibles para entrega inmediata o pedido personalizado.</p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filtrar modelos de artesanías">
+          <button type="button" class="filter-btn active" data-filter="todos">Todos los Modelos</button>
+          <button type="button" class="filter-btn" data-filter="clasico">Clásicos Cruceños</button>
+          <button type="button" class="filter-btn" data-filter="especial">Ediciones Coloridas</button>
+          <button type="button" class="filter-btn" data-filter="eventos">Eventos y Mayor</button>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid" aria-live="polite">
+          <!-- Las tarjetas se renderizan de forma segura mediante JS Vanilla -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CARRUSEL DE TESTIMONIOS NATIVO -->
+    <section id="testimonios" class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Experiencias Reales</span>
+          <h2>Lo que dicen quienes ya llevan nuestras artesanías</h2>
+          <p>Desliza horizontalmente para leer opiniones de clientes en Santa Cruz y viajeros.</p>
+        </div>
+
+        <div class="snap-carousel" role="region" aria-label="Testimonios de clientes">
+          <article class="testimonial-card">
+            <div>
+              <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              <p style="margin-block-start: 0.75rem;">
+                "Encargué dos docenas de llaveros de lagartijas con sombrero de saó para regalar a unos invitados que llegaron del exterior. Quedaron encantados con el detalle del sombrerito."
+              </p>
+            </div>
+            <div>
+              <div class="testimonial-author">Mariana C.</div>
+              <div class="testimonial-role">Santa Cruz de la Sierra</div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div>
+              <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              <p style="margin-block-start: 0.75rem;">
+                "Se nota el trabajo manual y la firmeza del tejido. Llevo el mío en las llaves de mi movilidad desde hace meses y mantiene intacta su forma y colores."
+              </p>
+            </div>
+            <div>
+              <div class="testimonial-author">Carlos Eduardo R.</div>
+              <div class="testimonial-role">Cliente Particular • Santa Cruz</div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div>
+              <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              <p style="margin-block-start: 0.75rem;">
+                "Excelente atención de José Alberto. Nos preparó un pedido en tonos verde y blanco para una feria cultural en tiempo récord y con una presentación impecable."
+              </p>
+            </div>
+            <div>
+              <div class="testimonial-author">Paola M.</div>
+              <div class="testimonial-role">Organizadora de Eventos</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. AGENDAMIENTO Y PEDIDOS DIRECTOS -->
+    <section id="agendar">
+      <div class="container">
+        <div class="booking-box">
+          <div>
+            <span class="eyebrow">Contacto Directo con el Artesano</span>
+            <h2>Solicita tus llaveros o pide una cotización</h2>
+            <p style="margin-block-start: 0.85rem;">
+              Atiendo pedidos desde una unidad para regalo personal hasta lotes personalizados para eventos, ferias, tiendas de recuerdos y empresas en <strong>Santa Cruz, Bolivia</strong>.
+            </p>
+            <ul style="margin-block-start: 1.25rem; padding-inline-start: 1.25rem; color: var(--text); font-weight: 600;">
+              <li>Consulta disponibilidad de colores inmediatos</li>
+              <li>Cotizaciones especiales por docena o cantidad</li>
+              <li>Coordinación rápida de entrega en Santa Cruz</li>
+            </ul>
+          </div>
+
+          <form class="booking-form-sim" id="whatsappOrderForm">
+            <div class="form-group">
+              <label for="clientName">Tu Nombre</label>
+              <input type="text" id="clientName" class="form-control" placeholder="Ej. Andrea López" required>
+            </div>
+
+            <div class="form-group">
+              <label for="modelSelect">Modelo de Interés</label>
+              <select id="modelSelect" class="form-control">
+                <option value="Lagartija Clásica Verde y Blanco con Sombrero de Saó">Lagartija Clásica Cruceña (Verde y Blanco)</option>
+                <option value="Lagartija Multicolor con Sombrero de Saó">Lagartija Multicolor con Sombrero de Saó</option>
+                <option value="Lagartija Tonos Tierra Tradicional">Lagartija Tonos Tierra Tradicional</option>
+                <option value="Pedido Personalizado / Por Mayor para Evento">Pedido Personalizado / Por Mayor para Evento</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="quantityInput">Cantidad Estimada</label>
+              <input type="number" id="quantityInput" class="form-control" min="1" value="1" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-block-start: 0.5rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+              Enviar Solicitud por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong style="font-size: 1.05rem;">José Alberto Marz Becker</strong>
+        <p>Artesanías • Llaveros en forma de lagartijas con sombrero de saó • Santa Cruz, Bolivia</p>
+      </div>
+      <div>
+        <a href="https://wa.me/59178914551" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="min-height: 44px;">
+          WhatsApp: +591 78914551
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const WHATSAPP_NUMBER = '59178914551';
+
+      // Catálogo de piezas del portafolio (Sin precios no confirmados -> Modo Cotización directa)
+      const craftsCatalog = [
+        {
+          id: 'camba-verde',
+          category: 'clasico',
+          categoryLabel: 'Clásico Cruceño',
+          title: 'Lagartija Camba Verde y Blanco',
+          description: 'Tejida con los colores emblemáticos de Santa Cruz y coronada con un sombrero de saó en miniatura de ala ancha.',
+          bodyColor: '#15803d',
+          accentColor: '#ffffff'
+        },
+        {
+          id: 'tierra-natural',
+          category: 'clasico',
+          categoryLabel: 'Clásico Cruceño',
+          title: 'Lagartija Tonos Tierra & Saó',
+          description: 'Combinación cálida inspirada en la naturaleza oriental y fibras vegetales, ideal para amantes de la artesanía tradicional.',
+          bodyColor: '#92400e',
+          accentColor: '#fde047'
+        },
+        {
+          id: 'arcoiris-festivo',
+          category: 'especial',
+          categoryLabel: 'Edición Colorida',
+          title: 'Lagartija Festiva Multicolor',
+          description: 'Diseño alegre con cuentas de colores vivos que resaltan la silueta artesanal y su característico sombrero tejido.',
+          bodyColor: '#0284c7',
+          accentColor: '#f97316'
+        },
+        {
+          id: 'turquesa-sol',
+          category: 'especial',
+          categoryLabel: 'Edición Colorida',
+          title: 'Lagartija Turquesa del Oriente',
+          description: 'Acabado brillante en tonos turquesa y dorado, perfecta para identificar llaves o decorar bolsos de viaje.',
+          bodyColor: '#0d9488',
+          accentColor: '#facc15'
+        },
+        {
+          id: 'lote-corporativo',
+          category: 'eventos',
+          categoryLabel: 'Eventos y Mayor',
+          title: 'Recuerdos para Eventos y Ferias',
+          description: 'Lotes personalizados por docena con colores a elección para regalos institucionales, bodas y delegaciones.',
+          bodyColor: '#b45309',
+          accentColor: '#16a34a'
+        },
+        {
+          id: 'souvenir-turistico',
+          category: 'eventos',
+          categoryLabel: 'Eventos y Mayor',
+          title: 'Colección Souvenir Santa Cruz',
+          description: 'Presentación especial pensada para turistas y tiendas de artesanías que buscan un símbolo auténtico de Bolivia.',
+          bodyColor: '#166534',
+          accentColor: '#eab308'
+        }
+      ];
+
+      // Función segura para generar SVG de cada tarjeta sin innerHTML con datos externos
+      function createCraftSvg(bodyColor, accentColor) {
+        const svgNS = 'http://www.w3.org/2000/svg';
+        const svg = document.createElementNS(svgNS, 'svg');
+        svg.setAttribute('width', '140');
+        svg.setAttribute('height', '140');
+        svg.setAttribute('viewBox', '0 0 140 140');
+        svg.setAttribute('aria-hidden', 'true');
+
+        const ring = document.createElementNS(svgNS, 'circle');
+        ring.setAttribute('cx', '70');
+        ring.setAttribute('cy', '18');
+        ring.setAttribute('r', '9');
+        ring.setAttribute('fill', 'none');
+        ring.setAttribute('stroke', '#57534e');
+        ring.setAttribute('stroke-width', '3');
+        svg.appendChild(ring);
+
+        const tail = document.createElementNS(svgNS, 'path');
+        tail.setAttribute('d', 'M70 95 C 70 118, 45 126, 40 112');
+        tail.setAttribute('fill', 'none');
+        tail.setAttribute('stroke', bodyColor);
+        tail.setAttribute('stroke-width', '6');
+        tail.setAttribute('stroke-linecap', 'round');
+        svg.appendChild(tail);
+
+        const legs = document.createElementNS(svgNS, 'path');
+        legs.setAttribute('d', 'M54 66 L 38 58 M86 66 L 102 58 M56 86 L 40 96 M84 86 L 100 96');
+        legs.setAttribute('stroke', bodyColor);
+        legs.setAttribute('stroke-width', '4.5');
+        legs.setAttribute('stroke-linecap', 'round');
+        svg.appendChild(legs);
+
+        const body = document.createElementNS(svgNS, 'ellipse');
+        body.setAttribute('cx', '70');
+        body.setAttribute('cy', '75');
+        body.setAttribute('rx', '15');
+        body.setAttribute('ry', '23');
+        body.setAttribute('fill', bodyColor);
+        svg.appendChild(body);
+
+        const dot = document.createElementNS(svgNS, 'circle');
+        dot.setAttribute('cx', '70');
+        dot.setAttribute('cy', '75');
+        dot.setAttribute('r', '4');
+        dot.setAttribute('fill', accentColor);
+        svg.appendChild(dot);
+
+        const head = document.createElementNS(svgNS, 'ellipse');
+        head.setAttribute('cx', '70');
+        head.setAttribute('cy', '49');
+        head.setAttribute('rx', '12');
+        head.setAttribute('ry', '10');
+        head.setAttribute('fill', bodyColor);
+        svg.appendChild(head);
+
+        const hatBrim = document.createElementNS(svgNS, 'ellipse');
+        hatBrim.setAttribute('cx', '70');
+        hatBrim.setAttribute('cy', '41');
+        hatBrim.setAttribute('rx', '26');
+        hatBrim.setAttribute('ry', '6');
+        hatBrim.setAttribute('fill', '#eab308');
+        hatBrim.setAttribute('stroke', '#92400e');
+        hatBrim.setAttribute('stroke-width', '1.5');
+        svg.appendChild(hatBrim);
+
+        const hatCrown = document.createElementNS(svgNS, 'path');
+        hatCrown.setAttribute('d', 'M56 41 C 58 28, 82 28, 84 41 Z');
+        hatCrown.setAttribute('fill', '#facc15');
+        hatCrown.setAttribute('stroke', '#92400e');
+        hatCrown.setAttribute('stroke-width', '1.5');
+        svg.appendChild(hatCrown);
+
+        return svg;
+      }
+
+      // Renderizado seguro del portafolio usando createElement y textContent (OWASP XSS Safe)
+      const portfolioGrid = document.getElementById('portfolioGrid');
+
+      function renderPortfolio(filterCategory = 'todos') {
+        while (portfolioGrid.firstChild) {
+          portfolioGrid.removeChild(portfolioGrid.firstChild);
+        }
+
+        const filteredItems = filterCategory === 'todos'
+          ? craftsCatalog
+          : craftsCatalog.filter(item => item.category === filterCategory);
+
+        filteredItems.forEach(item => {
+          const container = document.createElement('div');
+          container.classList.add('card-container');
+
+          const card = document.createElement('article');
+          card.classList.add('craft-card');
+
+          const media = document.createElement('div');
+          media.classList.add('craft-media');
+          media.appendChild(createCraftSvg(item.bodyColor, item.accentColor));
+
+          const body = document.createElement('div');
+          body.classList.add('craft-body');
+
+          const infoDiv = document.createElement('div');
+
+          const tag = document.createElement('span');
+          tag.classList.add('craft-tag');
+          tag.textContent = item.categoryLabel;
+
+          const title = document.createElement('h3');
+          title.textContent = item.title;
+
+          const desc = document.createElement('p');
+          desc.textContent = item.description;
+
+          infoDiv.appendChild(tag);
+          infoDiv.appendChild(title);
+          infoDiv.appendChild(desc);
+
+          const ctaLink = document.createElement('a');
+          ctaLink.classList.add('btn', 'btn-secondary');
+          ctaLink.style.width = '100%';
+          const message = `Hola José Alberto, me gustaría cotizar el modelo artesanal: ${item.title}.`;
+          const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+          if (waUrl.startsWith('https://wa.me/')) {
+            ctaLink.setAttribute('href', waUrl);
+          }
+          ctaLink.setAttribute('target', '_blank');
+          ctaLink.setAttribute('rel', 'noopener noreferrer');
+          ctaLink.textContent = 'Consultar por WhatsApp';
+
+          body.appendChild(infoDiv);
+          body.appendChild(ctaLink);
+
+          card.appendChild(media);
+          card.appendChild(body);
+          container.appendChild(card);
+          portfolioGrid.appendChild(container);
+        });
+      }
+
+      renderPortfolio('todos');
+
+      // Delegación de eventos para botones de filtro
+      const filterBar = document.querySelector('.filter-bar');
+      filterBar.addEventListener('click', (event) => {
+        const btn = event.target.closest('.filter-btn');
+        if (!btn) return;
+
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderPortfolio(btn.dataset.filter);
+      });
+
+      // Menú hamburguesa accesible
+      const menuToggle = document.getElementById('menuToggle');
+      const primaryNav = document.getElementById('primaryNav');
+
+      function updateMenuVisibility() {
+        if (window.innerWidth <= 820) {
+          const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+          primaryNav.hidden = !isExpanded;
+        } else {
+          primaryNav.hidden = false;
+        }
+      }
+
+      updateMenuVisibility();
+      window.addEventListener('resize', updateMenuVisibility);
+
+      menuToggle.addEventListener('click', () => {
+        const currentState = menuToggle.getAttribute('aria-expanded') === 'true';
+        const nextState = !currentState;
+        menuToggle.setAttribute('aria-expanded', String(nextState));
+        primaryNav.hidden = !nextState;
+      });
+
+      primaryNav.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A' && window.innerWidth <= 820) {
+          menuToggle.setAttribute('aria-expanded', 'false');
+          primaryNav.hidden = true;
+        }
+      });
+
+      // Despacho seguro del formulario de cotización hacia WhatsApp
+      const orderForm = document.getElementById('whatsappOrderForm');
+      orderForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const clientName = document.getElementById('clientName').value.trim();
+        const model = document.getElementById('modelSelect').value;
+        const quantity = document.getElementById('quantityInput').value;
+
+        const textMessage = [
+          `Hola José Alberto Marz Becker, soy ${clientName}.`,
+          `Quisiera solicitar una cotización de tus artesanías:`,
+          `- Modelo: ${model}`,
+          `- Cantidad estimada: ${quantity} unidad(es)`,
+          `¡Muchas gracias!`
+        ].join('\n');
+
+        const safeTarget = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(textMessage)}`;
+        if (safeTarget.startsWith('https://wa.me/')) {
+          window.open(safeTarget, '_blank', 'noopener,noreferrer');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
